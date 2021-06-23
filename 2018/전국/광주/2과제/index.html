@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 상태 의사 클래스 요소들 모음집 -->
+    <input type="checkbox" name="menu" id="toggle" hidden />
+    <input type="radio" name="slideImage" id="slide1" hidden />
+    <input type="radio" name="slideImage" id="slide2" hidden />
+    <input type="radio" name="slideImage" id="slide3" checked hidden />
+    <input type="radio" name="slideImage" id="slide4" hidden />
+    <input type="radio" name="slideImage" id="slide5" hidden />
+    <input type="radio" name="slideImage" id="slide6" hidden />
+    <input type="radio" name="slideImage" id="slide7" hidden />
+    <input type="radio" name="slideImage" id="slide8" hidden />
+    <input type="radio" name="slideImage" id="slide9" hidden />
+    <input type="radio" name="slideImage" id="slide10" hidden />
+    <input type="radio" name="course" id="bus-course1" hidden checked />
+    <input type="radio" name="course" id="bus-course2" hidden />
+    <input type="radio" name="course" id="bus-course3" hidden />
+    <input type="radio" name="course" id="bus-course4" hidden />
+    <input type="radio" name="course" id="bus-course5" hidden />
+    <input type="radio" name="course" id="bus-course6" hidden />
+
+    <main>
+      <!-- 비쥬얼 영역 -->
+      <div id="visual">
+        <!--헤더 영역 -->
+        <header class="jb ac">
+          <!-- 로고 -->
+          <div class="logo">
+            <h1>YEOSU <br /><span>TOUR</span></h1>
+          </div>
+
+          <!-- 스크롤 네비게이션 -->
+          <nav>
+            <ul class="flex">
+              <li><a href="#s2">관광지</a></li>
+              <li><a href="#s3">사진콘테스트</a></li>
+              <li><a href="#s4">낭만버스</a></li>
+            </ul>
+          </nav>
+
+          <!-- 토글 메뉴 -->
+          <label for="toggle" class="toggle-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+        </header>
+
+        <!-- 비쥬얼 텍스트 영역 -->
+        <div class="visual-text">
+          <div class="typing">
+            <div class="underline"></div>
+          </div>
+          <h1>BEAUTIFUL YEOSU</h1>
+        </div>
+
+        <!-- 삼각형 토글 메뉴 -->
+        <div class="triangle-menu">
+          <nav class="triangle-nav">
+            <ul class="triangle-menu__list">
+              <li><a href="#">MENU1</a></li>
+              <li><a href="#">MENU2</a></li>
+              <li><a href="#">MENU3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- 첫번째 섹션 여수 관광지 소개 슬라이드 -->
+      <section id="s2">
+        <div class="title-box">
+          <h1>" 한려수도의 기점을 이루는 푸르고 막은 바다 여수 "</h1>
+          <h2>
+            예로부터 농경과 어로가 발달한 양향이었으며, 임진왜란을 극복한 이
+            충무공과 그를 따르던 선열들의 얼이 듬뿍 담겨진 호국충절의 고장이다.
+          </h2>
+        </div>
+
+        <div class="image-slide">
+          <div class="container flex">
+            <label for="slide1">
+              <img src="images/slide_1.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">오동도</p>
+                <p class="description">사계절 사람들이 찾아가는 곳!!!</p>
+                <p class="address">주소 : 전라남도 여수시 오동도로 222</p>
+              </div>
+            </label>
+            <label for="slide2">
+              <img src="images/slide_2.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">여수밤바다/산단야경</p>
+                <p class="description">낭만과 황홀함이 넘치는 여수 도심 야경</p>
+                <p class="address">주소 : 전라남도 여수시 종화동</p>
+              </div>
+            </label>
+            <label for="slide3">
+              <img src="images/slide_3.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">향일암</p>
+                <p class="description">
+                  커다란 바위 동굴인 일주문을 지나 만나는 새로운 세상
+                </p>
+                <p class="address">주소 : 전라남도 여수시 돌산읍 향일암로 60</p>
+              </div>
+            </label>
+            <label for="slide4">
+              <img src="images/slide_4.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">금오도 비렁길</p>
+                <p class="description">'비렁'은 벼랑(졀벽)의 여수사투리</p>
+                <p class="address">주소 : 전라남도 여수시 남면 심장리</p>
+              </div>
+            </label>
+            <label for="slide5">
+              <img src="images/slide_5.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">여수세계 박람회장</p>
+                <p class="description">끝없이 펼쳐진 바다와 공연이벤트</p>
+                <p class="address">주소 : 전라남도 여수시 수정동</p>
+              </div>
+            </label>
+            <label for="slide6">
+              <img src="images/slide_6.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">진남관</p>
+                <p class="description">
+                  조선시대 400년간 수군의 본거지였던 여수
+                </p>
+                <p class="address">주소 : 전라남도 여수시 동문로 11 망해루</p>
+              </div>
+            </label>
+            <label for="slide7">
+              <img src="images/slide_7.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">해상케이블카</p>
+                <p class="description">끝없이 펼쳐진 바다경관</p>
+                <p class="address">
+                  주소 : 전라남도 여수시 돌산읍 돌산로 3600-1(돌산공원)
+                </p>
+              </div>
+            </label>
+            <label for="slide8">
+              <img src="images/slide_8.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">이순신대교</p>
+                <p class="description">
+                  여수에서 광양을 이어주는 순수 우리 기술로 만든 국내 첫 현수교
+                </p>
+                <p class="address">주소 : 전라남도 여수시 묘도동</p>
+              </div>
+            </label>
+            <label for="slide9">
+              <img src="images/slide_9.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">거문도 백도</p>
+                <p class="description">남해의 아름다운 섬 거문도와 백도</p>
+                <p class="address">
+                  주소 : 전라남도 여수시 삼산면 거문리 거문도
+                </p>
+              </div>
+            </label>
+            <label for="slide10">
+              <img src="images/slide_10.jpg" alt="" />
+              <div class="slide-info">
+                <p class="title">영취산진달래</p>
+                <p class="description">
+                  온 산이 붉게 물들어 가슴이 먹먹하도록 만드는 진달래
+                </p>
+                <p class="address">주소 : 전라남도 여수시 상암동</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- 두번쨰 섹션 여수 사진 콘테스트 -->
+      <section id="s3">
+        <div class="wrap">
+          <h2>사진을 찍어 멋진여수를 모두에게 보여주기</h2>
+          <h1>여수사진 콘테스트</h1>
+          <div class="gallery">
+            <div class="flex">
+              <div class="top-left">
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-middle">
+                <div class="flex">
+                  <div class="img">
+                    <div class="img-modal">
+                      <button>MORE</button>
+                    </div>
+                  </div>
+                  <div class="img">
+                    <div class="img-modal">
+                      <button>MORE</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-right">
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex bot">
+              <div class="bot-l">
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="bot-r">
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+                <div class="img">
+                  <div class="img-modal">
+                    <button>MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+        세번째 섹션 
+        여수 낭만버스 안내 
+      -->
+      <section id="s4">
+        <div class="wrap">
+          <h2>버스를 타고 편안하게 여수한바퀴</h2>
+          <h1>여수낭만버스</h1>
+          <div class="bus-introduce">
+            <div class="bus-select">
+              <label for="bus-course1" class="bus-select__course"
+                >여수 낭만버스 - 제 1 코스</label
+              >
+              <label for="bus-course2" class="bus-select__course"
+                >여수 낭만버스 - 제 2 코스</label
+              >
+              <label for="bus-course3" class="bus-select__course"
+                >여수 낭만버스 - 토요유적코스</label
+              >
+              <label for="bus-course4" class="bus-select__course"
+                >여수 낭만버스 - 야경코스</label
+              >
+              <label for="bus-course5" class="bus-select__course"
+                >여수 낭만버스 - 주간코스</label
+              >
+              <label for="bus-course6" class="bus-select__course"
+                >여수 낭만버스 - 야간코스</label
+              >
+            </div>
+
+            <div class="bus-info">
+              <div class="bus-title change-view">
+                <div class="bus-title__course">제 1 코스</div>
+                <div class="bus-title__course">제 2 코스</div>
+                <div class="bus-title__course">토요유적코스</div>
+                <div class="bus-title__course">야경코스</div>
+                <div class="bus-title__course">주간코스</div>
+                <div class="bus-title__course">야간코스</div>
+              </div>
+              <div class="bus-content change-view">
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>오동도</li>
+                    <li>진남관</li>
+                    <li>해양수산과학관</li>
+                    <li>향일암</li>
+                    <li>여수수산시장</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span> 소요시간 : 7시간 20분 </span>
+                    <span> 요금 : 9,000원 </span>
+                  </div>
+                </div>
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>향일암</li>
+                    <li>이순신광장</li>
+                    <li>흥국사</li>
+                    <li>이순시대교 홍보관</li>
+                    <li>서시장(승,하차)</li>
+                    <li>여수특화물수산시장(정차)</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span>소요시간 : 7시간 20분</span>
+                    <span>요금 : 9,000원</span>
+                  </div>
+                </div>
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>충민사</li>
+                    <li>진남관</li>
+                    <li>고소대</li>
+                    <li>이순시광장</li>
+                    <li>전라좌수영거북선</li>
+                    <li>선소</li>
+                    <li>손양원목사유적공원</li>
+                    <li>흥국사</li>
+                    <li>수산시장</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span>소요시간 : 7시간 20분</span>
+                    <span>요금 : 9,000원</span>
+                  </div>
+                </div>
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>여수국가산업단지</li>
+                    <li>돌산공원</li>
+                    <li>돌산갓김치거리</li>
+                    <li>이순시광장</li>
+                    <li>오동도 야간분수</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span>소요시간 : 2시간 30분</span>
+                    <span>요금 : 9,000원</span>
+                  </div>
+                </div>
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>아쿠아플라넷</li>
+                    <li>케이블카 주차타워</li>
+                    <li>오동도</li>
+                    <li>엠블호텔</li>
+                    <li>하멜전시관</li>
+                    <li>이순신광장</li>
+                    <li>여객선터미널</li>
+                    <li>돌산공원입구</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span>소요시간 : 각 승강장별 승.하차 가능</span>
+                    <span>요금 : 5,000원</span>
+                  </div>
+                </div>
+                <div class="bus-content__item">
+                  <ul class="bus-content__list">
+                    <li>엑스포역</li>
+                    <li>돌산공원입구</li>
+                    <li>국동어항단지(게장백반거리)</li>
+                    <li>예울마루</li>
+                    <li>선소</li>
+                    <li>서호요트마리나</li>
+                    <li>여수시청</li>
+                    <li>여문문화의거리</li>
+                    <li>교동시장(포차거리)</li>
+                    <li>이순신광장</li>
+                    <li>엑스포역</li>
+                  </ul>
+                  <div class="bus-content__description">
+                    <span>소요시간 : 각 승강장별 승.하차 가능</span>
+                    <span>요금 : 10,000원 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg"></div>
+      </section>
+    </main>
+    <!-- 푸터 영역 -->
+    <footer>
+      <!-- 왼쪽 내용 -->
+      <div class="left-contents">
+        <p>문의하기</p>
+        <div>
+          <input type="email" placeholder="E-Mail" />
+          <div class="input-line-left"></div>
+          <div class="input-line-right"></div>
+        </div>
+        <div>
+          <input type="text" placeholder="Title" />
+          <div class="input-line-left"></div>
+          <div class="input-line-right"></div>
+        </div>
+        <div>
+          <input type="text" placeholder="Content" />
+          <div class="input-line-left"></div>
+          <div class="input-line-right"></div>
+        </div>
+      </div>
+      <!-- 오른쪽 내용 -->
+      <div class="right-contents">
+        <div class="item">
+          <img src="images/icons/icon_facebook.png" alt="facebook-icon" />
+          <img src="images/icons/icon_instagram.png" alt="instagram-icon" />
+          <img src="images/icons/icon_twitter.png" alt="twitter-icon" />
+          <p>COPYRIGHT © WEBSKILLS. ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

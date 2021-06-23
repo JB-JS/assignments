@@ -1,0 +1,461 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "맑은 고딕";
+}
+
+/* 미리 정의된 클래스 들 */
+.flex {
+	display: flex;
+}
+.w {
+	flex-wrap: wrap;
+}
+.sb {
+	justify-content: space-between;
+}
+.rap {
+	width: 100%;
+	max-width: 1140px; 
+	margin: 0 auto;
+}
+.slide {
+	transition: margin .7s;
+}
+.icon {
+	transition: transform .5s;
+	cursor: pointer;
+}
+.icon:hover {
+	transform: scale(1.2);
+}
+a:hover {
+	background: red;
+}
+button:hover {
+	background: red !important;
+	color: #fff !important;
+}
+img[alt=triangle]:hover + button{
+	background: red;
+	color: #fff !important;
+}
+
+/* 태그 기본값 설정 */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	list-style: none;
+}
+input, button {
+	border: none;
+}
+button {
+	background: none;
+}
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+aside {
+	transition: right .5s;
+}
+
+/* 인풋 이벤트 영역 */
+#slide1:checked ~ main #section1 .slide { margin-left: 0; }
+#slide2:checked ~ main #section1 .slide { margin-left: -100%; }
+#slide3:checked ~ main #section1 .slide { margin-left: -200%; }
+
+#slide1:checked ~ main #section1 .btn > label:nth-child(1) { background: rgba(0, 0, 0, .3); border: 4px solid #fff; }
+#slide2:checked ~ main #section1 .btn > label:nth-child(2) { background: rgba(0, 0, 0, .3); border: 4px solid #fff; }
+#slide3:checked ~ main #section1 .btn > label:nth-child(3) { background: rgba(0, 0, 0, .3); border: 4px solid #fff; }
+
+#hambuger:checked ~ aside { right: -390px; }
+
+/* 그룹화 */
+#section1, #section2, #section3, #section4, #section5, footer {
+	text-align: center;
+}
+
+/* 헤더 영역 */
+header{
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+	padding-top: 45px;
+}
+header > div {
+	align-items: flex-end;
+}
+header nav { 
+	display: flex;
+	flex-wrap: wrap;
+}
+header ul a {
+	font-weight: 300;
+}
+header ul > li:nth-child(2) { margin-left: 64px; }
+header ul > li:nth-child(3) { margin-left: 51px; }
+header ul > li:nth-child(4) { margin-left: 44px; }
+header ul > li:nth-child(5) { margin-left: 36px; }
+
+/* 섹션 1영역 */
+#section1 {
+	position: relative;
+	overflow: hidden;
+}
+#section1 .slide {
+	width: 100%;
+}
+#section1 .slide > div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+#section1 .slide > div:nth-child(1) { background-image: url('../images/slide1.jpg'); }
+#section1 .slide > div:nth-child(2) { background-image: url('../images/slide2.jpg'); }
+#section1 .slide > div:nth-child(3) { background-image: url('../images/slide3.jpg'); }
+#section1 .box {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, .3);
+	width: 100%;
+	border-left: 5px solid #ff521e;
+	max-width: 995px;
+	bottom: 160px;
+	padding: 28px 20px 29px 83px;
+}
+#section1 .box h1 {
+	font-family: "Segoe UI";
+	font-style: italic;
+	line-height: 35px;
+	font-weight: 900;
+	font-size: 40px;
+	text-align: left;
+}
+#section1 .box p {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: 200;
+}
+#section1 .icon-list {
+	margin-right: 81px;
+	display: flex;
+	align-items: flex-end;
+}
+#section1 .icon-list > div {
+	margin-left: 25px;
+}
+#section1 .btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#section1 .btn > label{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+/* section2 영역 */
+#section2 {
+	padding: 110px 0;	
+}
+#section2 h1 {
+	font-size: 30px;
+	color: #606060;
+	font-weight: 600;
+}
+#section2 p {
+	font-size: 18px;
+	color: #999999;	
+	margin: 30px 0;
+}
+#section2 .btn-list {
+	justify-content: center;
+}
+#section2 .btn {
+	position: relative;
+}
+#section2 button {
+	width: 140px;
+	height: 35px;
+	border: 2px solid #a1a1a1;
+	color: #878787;
+	margin-right: 18px;
+	font-size: 16px;
+}
+#section2 .btn img {
+	position: absolute;
+	left: -2.5px;
+	top: -2.5px;
+}
+
+/* section3 영역 */
+#section3 {
+	position: relative;
+	padding-top: 110px;
+	padding-bottom: 70px;
+}
+#section3::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/img1.jpg');
+	background-position: 35% 40%;
+	opacity: .3;
+	z-index: -2;
+}
+#section3::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #b72f05;
+	opacity: .45;
+	z-index: -1;
+}
+#section3 h1 {
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+	font-family: "Lucida Sans";
+	font-size: 180px;
+	font-style: italic;
+	opacity: .08;
+}
+#section3 h2 {
+	font-family: "Century Gothic";
+	font-size: 60px;
+	margin-top: 38px;
+}
+
+/* section4 영역 */
+#section4 {
+	padding: 110px 0;	
+}
+#section4 h1 {
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 75px;
+	color: #606060;
+}
+#section4 article {
+	width: 262px;
+}
+#section4 .img-box {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+#section4 .search {
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background: #ee602b;
+}
+#section4 p {
+	font-size: 18px;
+	color: #999999;
+	margin: 22px 0;
+}
+#section4 h2 {
+	font-size: 20px;
+	color: #333;
+}
+
+/* section5 영역 */
+#section5 {
+	background: #ff521e;
+	padding: 25px 0;
+}
+#section5 h1 {
+	font-size: 30px;
+}
+#section5 .send {
+	width: 690px;
+}
+#section5 input, #section5 button {
+	height: 50px;
+}
+#section5 input {
+	width: 58%;
+	background: #fff;
+	color: #999;
+	padding-left: 15px;
+}
+#section5 button {
+	width: 40%;
+	background: #656565;
+	font-size: 25px;
+}
+
+/* footer 영역 */
+footer {
+	position: relative;	
+}
+footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/img6.jpg');
+	background-size: cover;
+	background-position: 0 90%;
+	background-repeat: no-repeat;
+	opacity: .45;
+	z-index: -2;
+}
+footer > div:first-child {
+	width: 100%;
+	height: 100%;
+	background: rgba(183, 47, 5, .45);
+	z-index: -1;
+	padding-top: 60px;
+}
+footer .icon {
+	margin-right: 15px;
+}
+footer .hi {
+	padding-top: 8px;
+}
+footer .list {
+	margin-bottom: 45px;
+}
+footer .box {
+	width: 748px;
+}
+footer .box > div:first-child input{
+	width: 48%;
+}
+footer .box > div:not(:first-child) input {
+	width: 100%;
+}
+footer input {
+	height: 50px;
+	padding-left: 20px;
+	background: rgba(255, 255, 255, .3);
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+footer input::placeholder {
+	color: #fff;
+}
+footer input[name=textarea] {
+	height: 120px !important;
+	padding-bottom: 60px;
+}
+footer button {
+	width: 100%;
+	font-size: 25px;
+	background: #656565;
+	margin-bottom: 75px;
+	height: 50px;
+}
+footer > div:last-child {
+	padding: 83px 0;
+	background: rgba(0, 0, 0, .8);	
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 390px;
+	height: 100%;
+	background: rgba(255, 82, 30, .6);
+	z-index: 10;
+}
+aside nav {
+	margin-top: 140px;
+	line-height: 60px;
+	text-align: center;
+}
+aside a {
+	font-size: 25px;
+}
+.menubox {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	background: rgba(0, 0, 0, .6);
+	z-index: 15;
+	right: 0;
+	top: 75px;
+}
+.menubox > label {
+	display: block;
+	width: 31px;
+	height: 25px;
+	cursor: pointer;
+
+}
+.menubox span {
+	display: block;
+	background: #fff;
+	border-radius: 2px;
+	height: 5px;
+}
+.menubox label > span:not(:last-child) {
+	margin-bottom: 2px;
+}
+
+/* 반응형 480px */
+@media (max-width: 480px) {
+	header > div {
+		justify-content: center !important;
+	}
+	header ul {
+		justify-content: center !important;
+	}
+	#section3 {
+		padding: 20px;
+	}
+	#section3 h1 {
+		font-size: 80px;
+	}
+	#section4 > div {
+		justify-content: center !important;
+	}
+	#section5 > div {
+		justify-content: center;
+		padding: 20px;
+	}
+	#section5 h1 {
+		margin-bottom: 20px;
+	}
+	footer > div > div {
+		justify-content: center !important;
+	}
+	footer .box {
+		margin: 10px;
+	}
+}
